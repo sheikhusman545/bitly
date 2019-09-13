@@ -2,7 +2,7 @@
 
 $long_url = 'https://stackoverflow.com/questions/ask';
 $apiv4 = 'https://api-ssl.bitly.com/v4/bitlinks/http://bit.ly/32IOOfN/clicks';//https://api-ssl.bitly.com/v4/bitlinks
-$genericAccessToken = 'aaa7049abd7140dee0925aaae7e60e67ab54dc67';
+$genericAccessToken = 'YOUR ACCESS TOKEN HERE';
 
 // $data = array(
 //     'long_url' => $long_url
@@ -19,7 +19,7 @@ $header = array(
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, "https://api-ssl.bitly.com/v4/bitlinks/bit.ly/32IOOfN/clicks");
 curl_setopt($ch, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
-// curl_setopt($ch, CURLOPT_USERPWD, "Authorization: Bearer aaa7049abd7140dee0925aaae7e60e67ab54dc67");
+// curl_setopt($ch, CURLOPT_USERPWD, "Authorization: Bearer YOUR ACCESS TOKEN HERE");
 
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
